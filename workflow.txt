@@ -1,0 +1,15 @@
+1. lexical analysis that tokenizes the code
+2. parser analysis that turns said tokens into an action tree
+3. semantic analysis that looks for errors in the code
+4. assembly / IR generation
+5. binary file generation using an assembler or custom
+6. linker to create final executable
+
+
+
+I will redo the scope to only handle basic arithmatic, in the hopes of building an MVP as quickly as possible
+example:
+	a = 5
+	b = 2
+	c = a + b
+	print c
