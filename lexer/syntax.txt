@@ -1,0 +1,31 @@
+Things a lexer needs:
+	indetifiers - variables like i,j
+		some variable types for now only int
+
+	types - int char etc
+	keywords - for, if, else, return
+	punctuation - i want to emulate c and java {} () ;
+	opearators - +, -, *, %, /, =
+	literals - strings or numbers or booleans, the actual values
+	comments - self explanatory
+	whitespace - slef explanatory
+
+	a line and only start with 2 things 
+		a type			int
+		a literal		a
+
+	from there it can be a couple of things but should we continue on this cascading check? I believe so since languages make things seem like magic to us only because they abstract away the mundane checking of simple things.
+
+
+
+Sample code
+
+int sum(int a, int b) {
+	c = a + b;
+	return c;
+}
+
+
+expected output
+
+[(type, int), (indetifier, sum), (punctuation, '('), (type, int), (literal, a), (punctuation ','), (type, int), (literal, b) ...etc] 
