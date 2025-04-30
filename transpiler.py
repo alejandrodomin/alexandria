@@ -6,7 +6,7 @@ def transpile(file):
             "gt": ">", "lt": "<", "gteq": ">=", "lteq": "<=",
             "par": "(", "epar": ")", "sqr": "[", "esqr": "]",
             "dct": "{", "edct": "}", "com": "," ,"then": ":",
-            "hash": "#", "eq": "="}
+            "hash": "#", "eq": "=", "pluseq": "+=", "mineq": "-="}
     new_name = file.replace("ipy", "py")
     transpiled_lines = []
 
@@ -38,6 +38,5 @@ if __name__=='__main__':
 
     # Access arguments
     file=args.file
-    print(file)
 
     transpile(file)
