@@ -1,5 +1,14 @@
-count eq 0
-for num in range par 100 epar then 
-	count pluseq num
+def count par to epar then 
+	count eq 0
+	for num in range par to epar then 
+		count pluseq num
+	
+	return count 
 
-print par count epar 
+print par count par 100 epar epar 
+
+
+def my_min par num_arr epar then 
+	return min par num_arr epar 
+
+print par my_min par sqr 10 com 12 com 2 com esqr epar epar 
