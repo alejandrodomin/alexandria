@@ -1,0 +1,5 @@
+count eq 0
+for num in range par 100 epar then 
+	count plus eq num
+
+print par count epar 
